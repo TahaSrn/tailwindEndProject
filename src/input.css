@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@font-face {
+    font-family: vazir;
+    src: url("/src/assets/fonts/persianFont/vazir-font-v18.0.0/Vazir-Medium.woff");
+}
+@theme{
+    --color-black-back:#181818;
+    --color-black-mate:#252C2C;
+    --color-black-mate2:#1C2121;
+    --color-mute:#939697;
+    --color-red:#FF2B00;
+    --color-orange-icon:#FF9535;
+    --font-vazir: vazir;
+}
+@layer components{
+    .btn{
+        @apply bg-orange-icon text-black rounded-[0.5rem] flex gap-2 items-center justify-center hover:scale-[115%] transition-all duration-300;
+    }
+}
